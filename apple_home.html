@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Store Style Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gainsboro;
+        font-size: x-large;
+    }
+    .color1{
+        color: aliceblue;
+    }
+    .color{
+        color: black;
+    }
+  </style>
+  
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navigation Bar -->
+  <nav class="w-full bg-black text-sm font-medium">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <!-- Left (Apple Icon) -->
+        <div class="flex items-center space-x-8">
+          <a href="#" class="text-white hover:text-gray-400">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M16.365 1.43c-.97.056-2.12.68-2.806 1.473-.6.693-1.124 1.8-.926 2.873 1.016.032 2.16-.594 2.84-1.41.645-.782 1.132-1.882.892-2.936zM20.438 16.44c-.29.643-.562 1.22-.965 1.928-.627 1.058-1.513 2.374-2.636 2.39-1.01.016-1.27-.65-2.658-.65-1.39 0-1.682.63-2.662.665-1.15.036-2.03-1.144-2.657-2.198-1.83-3.102-2.01-6.76-.89-8.717.837-1.462 2.32-2.32 3.667-2.32 1.2 0 2.07.674 3.118.674 1.007 0 1.79-.674 3.118-.674 1.18 0 2.42.647 3.257 1.762-2.87 1.54-2.4 5.59.218 6.867z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Center (Nav Links) -->
+        <div class="hidden md:flex space-x-8 text-white">
+          <a href="#" class="hover:text-gray-400">Store</a>
+          <a href="#" class="hover:text-gray-400">Mac</a>
+          <a href="#" class="hover:text-gray-400">iPad</a>
+          <a href="#" class="hover:text-gray-400">iPhone</a>
+          <a href="#" class="hover:text-gray-400">Watch</a>
+          <a href="#" class="hover:text-gray-400">AirPods</a>
+          <a href="#" class="hover:text-gray-400">TV & Home</a>
+          <a href="#" class="hover:text-gray-400">Entertainment</a>
+          <a href="#" class="hover:text-gray-400">Accessories</a>
+          <a href="#" class="hover:text-gray-400">Support</a>
+        </div>
+
+        <!-- Right (Search & Bag Icons) -->
+        <div class="flex items-center space-x-6">
+          <!-- Search Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M21.53 20.47l-5.36-5.36a7.5 7.5 0 1 0-1.06 1.06l5.36 5.36a.75.75 0 0 0 1.06-1.06zM4.5 10.5a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"/>
+            </svg>
+          </a>
+          <!-- Bag Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M6 7V6a6 6 0 1 1 12 0v1h2a1 1 0 0 1 1 1v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1h2zm2 0h8V6a4 4 0 1 0-8 0v1z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br/> <br/> <br/> <br/>
+  <div class="heading">
+  &nbsp;<h2 style="font-size: x-large;"><b> Store. The best way to <br/>buy the products you love.
+</b></h2>
+</div>
+ <br/><br/><br/><br/>
+ <div class="max-w-full relative">
+    <!-- Slide Back Button -->
+<button id="slide-back-btn" aria-label="Slide Back" 
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black text-white p-3 rounded-full shadow hover:bg-gray-800 transition">
+  &lt;
+</button>
+
+  <!-- Cards container -->
+  <div id="card-container" class="flex overflow-x-hidden scroll-smooth space-x-4">
+    <!-- Cards: 13 total (8 visible, then slide to see 5 more) -->
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202503?wid=400&hei=260&fmt=png-alpha&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4VEpBUDFBeEhMZS9GUnNSYXdEd0hscisrUlZaSVRoWVYzU0Qra0FoTmUwNng2bitObzZwQzk4cEorV1dZdzhIazVVcFlOTkdoMWg4ZkdDS1ovMUlzcW8
+      " alt="Image 1" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">MAC</b></h3>
+    </div>
+    
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202502_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXMGIwbkQ3THNNRjRsZmFuY3ZnUksrQTA2bGFaODVwaytiT1psSXc2dlhUWUwyZnhVM3hmakh4cEVIbk1pcnBIRXFpaVlBSTdOOXplUDUwZUNmQnR2OUxuakp5ZFBaaHhUOUJXVGFwbk9vT2k
+      " alt="Image 2" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><B style="color: black;"> iPhone</B></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eG53M0FRZHBXNTh1U1lFVEtSR2YzTm5qbE56RWRpRFNIRXZvbkd2S0l5dTg
+      " alt="Image 3" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">i PAD</b></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkNDJNVmlnVytwalkvOTJ2M1BKWUREdkh5NTJ6cGtEemJOblBHR043ZjFkZzAzOVFHb3N0MkVmS01ZcFh0d1Y4R2oxdUo4aWtyK05IRkZuWjBWbW5HM00
+      " alt="Image 4" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">APPLE WATCHES</b></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=png-alpha&.v=VzVpanYvTldHb05iVXFhc0xveWRLM25jd0w4dXFwc1hFbWZkNm9IcUR2bytSMWt1ZUNyTGx4SjRKL1pSL0ZDeGpCeVFkSWhuN0RJazJDeHBqaFFac0hlZzcwajlwb1R2dHNlazl1dldSUGQ5RzBLTDk5c25YRG5wR2ZpUlI4RFM
+      " alt="Image 5" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">APPLE VISION PRO</b></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yNlJ5eGFhR1FVd2NNNDB0VWRUSzVCUFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFI0R1M4eFpKRTFIclV0ZHRqakVRd1k
+      " alt="Image 6" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;"> AirPods</b></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1ydzduWDk4YUM5R1JVL2gwcEZnWWNaRFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFpQclc0OVE3cmhmS3FBaXd6cG8yYzg
+      " alt="Image 7" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">AirTags</b></h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFZ3YmJrVi9SakQxWUcrYWQwVXc5VTA
+      " alt="Image 8" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold"><b style="color: black;">APPLE TV 4K</b></h3>
+    </div>
+
+    <!-- Next 5 cards -->
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFJmbWU0TjJLamxsdTltNkZVZ1RhbDA
+      " alt="Image 9" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold">HOME PODS</h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://source.unsplash.com/random/200x200?sig=10" alt="Image 10" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold">Title 10</h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://source.unsplash.com/random/200x200?sig=11" alt="Image 11" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold">Title 11</h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://source.unsplash.com/random/200x200?sig=12" alt="Image 12" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold">Title 12</h3>
+    </div>
+
+    <div class="flex-shrink-0 w-1/12 min-w-[10rem] bg-white rounded-lg shadow-md overflow-hidden">
+      <img src="https://source.unsplash.com/random/200x200?sig=13" alt="Image 13" class="w-full h-24 object-cover" />
+      <h3 class="p-2 text-center text-sm font-semibold">Title 13</h3>
+    </div>
+  </div>
+
+  <!-- Slide button -->
+  <button id="slide-btn" aria-label="Slide Next" 
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-black text-white p-3 rounded-full shadow hover:bg-gray-800 transition">
+    &gt;
+  </button>
+
+  <script>
+    const backBtn = document.getElementById('slide-back-btn');
+
+backBtn.addEventListener('click', () => {
+  // Scroll left (backward) by ~5 cards width
+  container.scrollBy({
+    left: -800,
+    behavior: 'smooth'
+  });
+});
+
+    const btn = document.getElementById('slide-btn');
+    const container = document.getElementById('card-container');
+
+    btn.addEventListener('click', () => {
+      // Scroll by width of 5 cards (each approx 10rem ~ 160px)
+      container.scrollBy({
+        left: 800,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</div>
+<br/><br/><br/><br/><br/><br/><br/>
+
+     <body class="bg-gray-100 p-6" x-data="{ currentSlide: 0 }">
+  <!-- Slider container -->
+  <div class="relative overflow-hidden max-w-screen-xl mx-auto">
+    
+    <!-- Slide buttons -->
+    <button @click="currentSlide = Math.max(currentSlide - 1, 0)"
+      class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
+      &lt;
+    </button>
+    <button @click="currentSlide = Math.min(currentSlide + 1, 1)"
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
+      &gt;
+    </button>
+
+    <!-- Cards wrapper -->
+    <div class="flex transition-transform duration-500"
+      :style="'transform: translateX(-' + (currentSlide * 100) + '%)'">
+
+      <!-- First 3 cards -->
+      <div class="flex min-w-full gap-4">
+        <!-- Card 1: iPhone 16 Pro -->
+        <div class="bg-black text-white p-6 rounded-xl w-1/3 flex-shrink-0">
+            <div class="color1">
+          <h2 class="text-2xl font-bold mb-2">iPhone 16 Pro</h2>
+          <p class="text-pink-400 font-semibold">Apple Intelligence<sup class="text-orange-500">△</sup></p>
+          <p class="mt-2 text-sm">From $999 or $41.62/mo. for 24 mo.*</p></div>
+          <div class="mt-4 text-center">
+            <div class="pics">
+            <img src="https://techpp.com/wp-content/uploads/2024/09/iPhone-16-Pro-Desert-Titanium-wallpaper.jpg"
+        
+             class="mx-auto h-40 object-contain" />
+            <div class="text-4xl font-extrabold mt-2">PRO</div>
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-iphone-16-pro-202409_GEO_US?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXUHpnd0VsRWFiaWRaRHRaUXBvNTNkaTN3cldHSVhIZCtHM2xVUWV5dTAvVlU4amgyYkZNZC9iNVQ4S1VDT21ldVlKWlgzZzdyUXEzcGE2bUxYbWVvdHFROE5HdXpXTzl3cVdSci8xOTZVOXo
+            "
+              class="mx-auto h-40 object-contain" />
+            <div class="text-4xl font-extrabold mt-2">PRO</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: MacBook Air -->
+        <div class="bg-blue-50 p-6 rounded-xl w-1/3 flex-shrink-0">
+            <div class="color">
+          <h2 class="text-2xl font-bold mb-2">MacBook Air</h2>
+          <p class="text-pink-500 font-semibold">Apple Intelligence<sup class="text-orange-500">△</sup></p>
+          <p class="mt-2 text-sm">From $999 or $83.25/mo. for 12 mo.‡</p><br/>
+
+          <pre><b style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">MacBook Air. Supercharged by Apple Silicon.
+
+Thin. Light. Powerful.
+
+Performance so light, it’s heavy-hitting.
+
+Air. With Power</b></pre></div>
+          <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-macbook-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=MjhMcWJ2MGZwbXEwdnBkcUN6ZnhyOWVOMytmanI1M0ZTQWR1RjlDMWJpNXFTRjNxbmh1UnU2R29ibGdpZUFXc0prY3crUWRsN1dqVjRnMHR5S1hVbk15N0N0R0lhUGhlMG1Tdmc3RjZVQ09NTUhYNlZ6OGxKNWpBMHlTSTlldko
+          " class="mt-4 mx-auto h-40 object-contain" />
+        </div>
+
+        <!-- Card 3: Student Offer -->
+  
+     
+
+        <div class="bg-white p-6 rounded-xl w-1/3 flex-shrink-0 border">
+            <div class="color">
+          <p class="text-orange-600 font-semibold text-xs mb-1">LIMITED-TIME OFFER</p>
+          <h2 class="text-xl font-bold mb-2">Save on Mac and iPad for college</h2>
+          <p class="text-sm mb-2">Choose AirPods or an eligible accessory.</p></div>
+          <div class="relative">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-bts-offer-featured-202505?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=bTAvUVhobndWL01MVC9aenBVVGo5UWt3NHc3dStlS1AxQU12Y29qK3NjQ2dURmlHTnF4YjlXd3Y0dklRWlF6bXU2S1NDY0Mybzd2UUxDKzhkSmN0dE9YcjBUVFpWWXFIUzhWT1dJZ20wUlJYSWt3cWRMUzM0V1BVRzNWL0s3Nkw
+            " />
+            <div class="absolute top-0 left-0 bg-blue-500 text-white text-xl px-2 py-1 rounded-full">🎓</div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Second slide: 2 extra cards (optional example) -->
+      <div class="flex min-w-full gap-4">
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-xl w-1/3 flex-shrink-0 border">
+            <div class="color">
+          <h2 class="text-2xl font-bold mb-2">iPad Pro M4</h2>
+          <p class="text-pink-500 font-semibold">Apple Intelligence<sup class="text-orange-500">△</sup></p>
+          <p class="text-sm">From $1199 or $99.91/mo. for 12 mo.</p></div>
+          <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=UzBXQnlhUWdraTNvNU1Kb3pEQlpXRFJ0OFRiWngrNGllYTMvQ1dlWDBQZjZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWEdJV2RaUklyUnViT0c4OGJXRWhUTnArYWpGdS9XeFgvbS9ITnNYOEhYaG4
+          " />
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-black text-white p-6 rounded-xl w-1/3 flex-shrink-0">
+          <h2 class="text-2xl font-bold mb-2">Apple Watch Ultra</h2>
+          <p class="text-sm">From $799</p>
+          <img src="https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-Ultra-2-hero-230912.jpg.large.jpg" class="mt-4 mx-auto h-40 object-contain" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+<div class="heading">
+    <br/><br/><br/><br/>
+    <P>Help is here. Whenever and however you need it.</P></div>
+
+    <br/><br/><br/>
+    <br>
+     <div class="relative">
+    <!-- Cards Wrapper -->
+    <div class="flex gap-6 overflow-x-auto scroll-smooth pb-4 pr-6" :style="'scroll-behavior: smooth;'" x-ref="cardContainer">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md flex-shrink-0 w-[350px] p-6 transition-transform duration-300 hover:scale-105">
+        <p class="text-xs font-semibold text-gray-500 mb-1">APPLE SPECIALIST</p>
+        <h2 class="text-xl font-bold mb-4">Shop one on one with a Specialist. Online or in a store.</h2>
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-help-202506?wid=4000&hei=4167&fmt=p-jpg&qlt=95&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrUkxnN3NTOHN5WTV1c3NEYkc1TXhDMWorUGRVSzBNTnk4aWVXZTBsSnJkbEhjUnA4dFc4UjhxaGJyeTZ4TGxiTlExd2w0cFRwTkFXcVMrRy8xS0hPK0wvSlYzalNtQnlZRDd0YzdTaUlhTlo
+        "
+             alt="Apple Specialist" class="rounded-lg object-cover w-full h-48">
+      </div>
+
+      <!-- Card 2 -->
+      
+      <div class="bg-white rounded-2xl shadow-md flex-shrink-0 w-[350px] p-6 transition-transform duration-300 hover:scale-105">
+        <h2 class="text-xl font-bold mb-2">Shop with a Specialist over video.</h2>
+        <p class="text-sm text-gray-600 mb-4">Choose your next device in a guided, one-way video session.</p>
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-video-202409?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrYnlpTHAvaU1TZWJjTXg3K2FoelBrYTJZZGVJeU5DYWdWUlBBN2VmZFhPTm1td3JHMmlHM0d0VzBMMGs5ZHR4WjV4SDZXa3Y5QTB3VVBNTmZSWlNkR0xVTWxXTmtObkd0KytBWmk3akgvMEs
+        "
+             alt="Video Specialist" class="rounded-lg object-cover w-full h-48">
+      </div>
+       <div class="bg-white rounded-2xl shadow-md flex-shrink-0 w-[350px] p-6 transition-transform duration-300 hover:scale-105">
+        <h2 class="text-xl font-bold mb-2">Shop with a Specialist over video.</h2>
+        <p class="text-sm text-gray-600 mb-4">Choose your next device in a guided, one-way video session.</p>
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-taa-202505?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=cFEvalhFakpZVzg4RFZsWktqbXFNY0RvMUw4Rm9vb3JCaDFWOTNnU01UOVNTeEZoVVBncVRqTkNMNS9uNklFcEtYeVk3dW9BYmZDa2xxQitSOWhMaG9GTzZCL2trL3hMU1d2K2ZPcTVKWXM
+        "
+             alt="Video Specialist" class="rounded-lg object-cover w-full h-48">
+      </div>
+      <!-- Card 3 (Partially visible, scroll to view full) -->
+      <div class="bg-white rounded-2xl shadow-md flex-shrink-0 w-[350px] p-6 transition-transform duration-300 hover:scale-105">
+        <p class="text-xs font-semibold text-gray-500 mb-1">TODAY AT APPLE</p>
+        <h2 class="text-xl font-bold mb-4">Explore Apple in person.</h2>
+        <p class="text-sm text-gray-600 mb-4">Come try it for yourself at the Apple Store.</p>
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=VXV6Z09DaTFST3FqTnRkTjNkSENPM1ZnVFR5VGxOMG5WYlh6ZVpnWVpmOVNTeEZoVVBncVRqTkNMNS9uNklFcGdNL0tvRHFBWjFabEJvUTIxa3lDRWI2aER5OTZhZjhhVzlPaThxMkc0QVE
+        "
+             alt="Today at Apple" class="rounded-lg object-cover w-full h-48">
+      </div>
+    </div>
+
+    <!-- Scroll Buttons -->
+    <button @click="$refs.cardContainer.scrollLeft -= 400"
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 hidden md:flex">
+      &#8592;
+    </button>
+    <button @click="$refs.cardContainer.scrollLeft += 400"
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-md rounded-full p-2 hidden md:flex">
+      &#8594;
+    </button>
+  </div>
+<!-- 
+   <Scripts/>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <br/><br/><br/>
+  <body class="bg-gray-100 p-6">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> -->
+<br/><br/><br/>
+<div class="heading">
+<p style="color: aliceblue;">The Apple Store difference. Even more <br/>reasons to shop with us.</p> <br/></div>
+<br/><br/><br/><br/>
+   <body class="bg-[#f5f5f7] p-6">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-[#0071e3] mb-4 text-3xl">📱</div>
+      <h2 class="text-lg font-semibold leading-snug">
+        <span class="text-[#0071e3]">Trade in your current device.</span>
+        <span> Get credit toward a new one.<sup>3</sup></span>
+      </h2>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-[#af52de] mb-4 text-3xl">😊</div>
+      <h2 class="text-lg font-semibold leading-snug">
+        Make them yours.
+        <span class="block text-[#af52de]">Engrave a mix of emoji, names, and numbers for free.</span>
+      </h2>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-[#0071e3] mb-4 text-3xl">🔒</div>
+      <h2 class="text-lg font-semibold leading-snug">
+        Get a <span class="text-[#0071e3]">personalized shopping</span> experience in the
+        <span class="font-semibold">Apple Store app.</span>
+      </h2>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-[#007a33] mb-4 text-3xl">💳</div>
+      <h2 class="text-lg font-semibold leading-snug">
+        Pay in full or <span class="text-[#007a33]">pay over time</span>. Your choice.
+      </h2>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-[#007a33] mb-4 text-3xl">🚚</div>
+      <h2 class="text-lg font-semibold leading-snug">
+        Enjoy <span class="text-[#007a33]">two-hour delivery</span> from an Apple Store,
+        <span class="text-[#007a33]"> free delivery</span>, or <span class="text-[#007a33]">easy pickup.<sup>2</sup></span>
+      </h2>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white rounded-2xl shadow p-6 transition-transform duration-300 hover:scale-[1.03] text-[#1d1d1f]">
+      <div class="text-3xl mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="h-6 w-6 inline">
+      </div>
+      <h2 class="text-lg font-semibold leading-snug">
+        <span class="text-[#e55d2b]">Customize</span> your Mac and create your own style of Apple Watch.
+      </h2>
+    </div>
+
+  </div>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <br/> <br/> <br/> <br/> <br/> <br/>
+  <footer class="bg-black text-[#b5b5b5] text-sm pt-10 pb-16 px-6">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- Column 1 -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Shop and Learn</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white transition">Store</a></li>
+          <li><a href="#" class="hover:text-white transition">Mac</a></li>
+          <li><a href="#" class="hover:text-white transition">iPhone</a></li>
+          <li><a href="#" class="hover:text-white transition">iPad</a></li>
+          <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white transition">Apple Music</a></li>
+          <li><a href="#" class="hover:text-white transition">iCloud</a></li>
+          <li><a href="#" class="hover:text-white transition">Apple TV+</a></li>
+          <li><a href="#" class="hover:text-white transition">Apple One</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Apple Store</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white transition">Find a Store</a></li>
+          <li><a href="#" class="hover:text-white transition">Genius Bar</a></li>
+          <li><a href="#" class="hover:text-white transition">Today at Apple</a></li>
+          <li><a href="#" class="hover:text-white transition">Order Status</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">For Business</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white transition">Apple and Business</a></li>
+          <li><a href="#" class="hover:text-white transition">Shop for Business</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between text-xs text-[#777]">
+      <p>© 2025 Your Company. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Use</a>
+        <a href="#" class="hover:text-white">Site Map</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
